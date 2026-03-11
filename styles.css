@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --tab-bar-height: 52px;
+  --tab-bar-height: 76px;
   --lime: #FFDA22;
   --lime-dark: #F0C800;
   --yellow: #FFDA22;
@@ -53,9 +53,25 @@ body {
   top: 0; left: 0; right: 0;
   z-index: 1000;
   display: flex;
+  flex-wrap: wrap;
   background: var(--white);
   border-bottom: 3px solid var(--lime);
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.demo-banner {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 5px 16px;
+  background: rgba(255, 218, 34, 0.3);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  color: #7a6000;
+  letter-spacing: 0.3px;
 }
 
 .tab-btn {
