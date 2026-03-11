@@ -1,0 +1,9 @@
+{
+  "name": "rev-coffee-order",
+  "version": "1.0.0",
+  "description": "Rev Coffee custom ordering platform — Built by HAI Solutions",
+  "scripts": {
+    "dev": "npx serve -p 3000 .",
+    "start": "npx serve -p 3000 ."
+  }
+}
