@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
+  --tab-bar-height: 52px;
   --lime: #FFDA22;
   --lime-dark: #F0C800;
   --yellow: #FFDA22;
@@ -75,6 +76,7 @@ body {
   cursor: pointer;
   transition: var(--transition);
   position: relative;
+  white-space: nowrap;
 }
 
 .tab-btn:hover { color: var(--text); }
@@ -91,7 +93,7 @@ body {
 
 .tab-content {
   display: none;
-  padding-top: 52px;
+  padding-top: var(--tab-bar-height);
 }
 
 .tab-content.active {
@@ -229,7 +231,7 @@ body {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   position: sticky;
-  top: 52px;
+  top: var(--tab-bar-height);
   background: var(--white);
   z-index: 50;
   border-bottom: 1px solid var(--gray-200);
