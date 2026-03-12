@@ -655,6 +655,28 @@ body {
 
 .cart-powered strong { color: var(--text); }
 
+.cart-powered-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  transition: var(--transition);
+  position: relative;
+}
+
+.cart-powered-link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--text);
+  transition: width 0.3s ease;
+}
+
+.cart-powered-link:hover { color: var(--lime-dark); }
+.cart-powered-link:hover::after { width: 100%; background: var(--lime-dark); }
+
 /* ===== ITEM MODAL ===== */
 .modal-overlay {
   position: fixed; inset: 0;
@@ -1113,6 +1135,16 @@ body {
   color: var(--text);
   letter-spacing: 2px;
   margin-bottom: 16px;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.hai-badge:hover {
+  background: var(--text);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .hai-card h2 {
@@ -1163,6 +1195,33 @@ body {
 
 .site-footer strong {
   color: var(--white);
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  transition: var(--transition);
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--lime);
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--lime);
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
 
 .footer-sub {
