@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --tab-bar-height: 76px;
   --lime: #FFDA22;
   --lime-dark: #F0C800;
   --yellow: #FFDA22;
@@ -53,35 +52,9 @@ body {
   top: 0; left: 0; right: 0;
   z-index: 1000;
   display: flex;
-  flex-wrap: wrap;
   background: var(--white);
   border-bottom: 3px solid var(--lime);
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.demo-banner {
-  flex: 0 0 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 16px;
-  background: var(--white);
-}
-
-.demo-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 4px 12px;
-  background: rgba(255, 218, 34, 0.35);
-  border: 1px solid rgba(200, 160, 0, 0.25);
-  border-radius: 20px;
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 500;
-  color: #7a6000;
-  white-space: nowrap;
-  letter-spacing: 0.2px;
 }
 
 .tab-btn {
@@ -102,7 +75,6 @@ body {
   cursor: pointer;
   transition: var(--transition);
   position: relative;
-  white-space: nowrap;
 }
 
 .tab-btn:hover { color: var(--text); }
@@ -119,7 +91,7 @@ body {
 
 .tab-content {
   display: none;
-  padding-top: var(--tab-bar-height);
+  padding-top: 52px;
 }
 
 .tab-content.active {
@@ -257,7 +229,7 @@ body {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   position: sticky;
-  top: var(--tab-bar-height);
+  top: 52px;
   background: var(--white);
   z-index: 50;
   border-bottom: 1px solid var(--gray-200);

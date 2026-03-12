@@ -49,7 +49,8 @@ Rev already runs their entire operation on Square (POS, inventory, gift cards, p
 **Phase 1 — Payment Processing**
 - Integrate [Square Web Payments SDK](https://developer.squareup.com/docs/web-payments/overview) for secure card entry
 - Support all current payment methods: Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, Cash App Pay
-- Processing fees drop from **3.3% + $0.30** (Square Online) to **2.6% + $0.10** (Square API direct) — saving Rev money on every transaction
+- Online processing fees drop from **3.3% + $0.30** (Square Online) to **2.9% + $0.30** (Square API direct) — saving Rev money on every transaction with zero platform commission on top
+- In-person rates stay at **2.6% + $0.10** through existing Square POS — no disruption to in-store workflow
 
 **Phase 2 — Order Management**
 - Push orders directly to Square's [Orders API](https://developer.squareup.com/docs/orders-api/what-it-does) so they appear in the existing Square Dashboard and Kitchen Display
@@ -81,6 +82,7 @@ Rev already runs their entire operation on Square (POS, inventory, gift cards, p
 - Customer name, phone, and special notes on each order
 
 ### HAI Solutions Value Prop
+- **Save .4% Per Transaction** — Square API integration drops online processing from 3.3% to 2.9%, with zero platform commission
 - Your Brand, Your Way — fully custom design, not a shared template
 - Local Support — we're less than a mile from Rev Coffee
 - Built in Days, Not Months — AI-accelerated development
@@ -102,19 +104,24 @@ Rev already runs their entire operation on Square (POS, inventory, gift cards, p
 
 ## Cost Comparison
 
-| | Square Online | Odeko | HAI Custom Platform |
+| | Square Online | Odeko | HAI + Square API |
 |---|---|---|---|
-| Per-order fee | 3.3% + $0.30 | 5.0% | **$0** |
-| Payment processing | Included above | Included above | **2.6% + $0.10** (Square API) |
+| Online processing | 3.3% + $0.30 | 5.0% | **2.9% + $0.30** (Square API) |
+| Platform commission | Included above | Included above | **$0** |
 | Monthly platform fee | $0 | $0 | **Flat monthly rate** |
 | Custom branding | Limited | No | **Full control** |
 | Menu flexibility | Template-based | Template-based | **Unlimited** |
+| POS compatibility | Square only | Separate system | **Same Square POS** |
 | Support | Ticket queue | Ticket queue | **Local, in-person** |
 
+### Why Square API? Save .4% Per Transaction.
+
+Rev already runs on Square for POS, inventory, gift cards, and in-store payments. Rather than introduce a new processor, we integrate directly with Square's API — dropping online processing from 3.3% to 2.9% (**.4% saved on every transaction**), zero platform commission, and orders sync straight to the Square Dashboard staff already uses.
+
 **Example savings on $15,000/month in online orders:**
-- Square Online fees: ~$825/month
-- Odeko fees: ~$750/month
-- HAI platform processing: ~$390/month + flat rate
+- Square Online fees: ~$825/month (3.3% + $0.30)
+- Odeko fees: ~$750/month (5%)
+- HAI + Square API: ~$735/month (2.9% + $0.30) — **plus no platform commission**
 
 ---
 
